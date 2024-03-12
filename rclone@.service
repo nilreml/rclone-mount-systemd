@@ -17,7 +17,7 @@ ExecStart= \
     --umask 022 \
     --allow-other \
     %i: %h/mnt/%i
-ExecStop=/bin/fusermount -uz %h/mnt/%i
+ExecStop=/bin/fusermount -u %h/mnt/%i
 
 [Install]
 WantedBy=default.target
